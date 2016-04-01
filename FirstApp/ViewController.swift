@@ -8,8 +8,15 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var actionJackson: UIImageView!
+    @IBOutlet weak var kidsPlaying: UIImageView!
+    @IBOutlet weak var launchButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +27,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func launchIt(sender: AnyObject) {
+        actionJackson.hidden = false
+        kidsPlaying.hidden = false
+        launchButton.hidden = true
+    }
 
 }
 
